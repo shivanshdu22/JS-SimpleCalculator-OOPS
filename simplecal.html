@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HTML Test</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body class="bg-dark text-white text-center">
+    <div class="container-fluid bg-dark">
+        <h2 class=" p-5">SIMPLE CALCULATOR</h2>
+        <div class="row  my-3 mx-auto" id="dis">
+            <input type="text" class="text-white mx-5 mx-auto" id="display" disabled />
+        </div>
+        <div  class="row p-5" id="numbers">
+            <div class="col-lg-12 mx-auto">
+                <button name="subject" type="submit" id="1" onclick="store(1)" value="1">1</button>
+                <button name="subject" type="submit" id="2" onclick="store(2)" value="2">2</button>
+                <button name="subject" type="submit" id="3" onclick="store(3)" value="3">3</button>
+                <button name="subject" type="submit" class="operation" id="m" value="*">*</button>
+            </div>
+            <div class="col-lg-12 mx-auto">
+                <button name="subject" type="submit" id="4" onclick="store(4)" value="4">4</button>
+                <button name="subject" type="submit" id="5" onclick="store(5)" value="5">5</button>
+                <button name="subject" type="submit" id="6" onclick="store(6)" value="6">6</button>
+                <button name="subject" type="submit" class="operation" id="p" value="+">+</button>
+            </div>
+            <div class="col-lg-12 mx-auto">
+                <button name="subject" type="submit" id="7" onclick="store(7)" value="7">7</button>
+                <button name="subject" type="submit" id="8" onclick="store(8)" value="8">8</button>
+                <button name="subject" type="submit" id="9" onclick="store(9)" value="9">9</button>
+                <button name="subject" type="submit" id="0" onclick="store(0)" value="0">0</button>
+            </div>
+            <div class="col-lg-12 mx-auto">
+                <button name="subject" type="submit" class="operation" id="d" value="/">/</button>
+                <button name="subject" type="submit" class="operation" id="s" value="-">-</button>
+                <button name="subject" type="submit" class="operatieq" id="res" value="=">Result</button>
+                <button name="subject" type="submit" class="operation" id="cl" onclick="cle(res)"
+                    value="c">Clear</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
